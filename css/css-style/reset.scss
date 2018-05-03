@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url("Raleway.eot");
+    src: url("../fonts/Raleway/Raleway.eot?#iefix") format('embedded-opentype'), url("../fonts/Raleway/Raleway.woff2") format('woff2'), url("../fonts/Raleway/Raleway.woff") format('woff'), url("../fonts/Raleway/Raleway.ttf") format('truetype'), url("../fonts/Raleway/Raleway.svg#Raleway") format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB06;
+}
+
+@font-face {
+    font-family: 'Raleway Medium';
+    src: url("../fonts/Raleway Medium/Raleway Medium.eot");
+    src: url("../fonts/Raleway Medium/Raleway Medium.eot?#iefix") format('embedded-opentype'), url("../fonts/Raleway Medium/Raleway Medium.woff2") format('woff2'), url("../fonts/Raleway Medium/Raleway Medium.woff") format('woff'), url("../fonts/Raleway Medium/Raleway Medium.ttf") format('truetype'), url("../fonts/Raleway Medium/Raleway Medium.svg#Raleway Medium") format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB06;
+}
+
+@font-face {
+    font-family: 'Raleway Medium Italic';
+    src: url("../fonts/Raleway Medium Italic/Raleway Medium Italic.eot");
+    src: url("../fonts/Raleway Medium Italic/Raleway Medium Italic.eot?#iefix") format('embedded-opentype'), url("../fonts/Raleway Medium Italic/Raleway Medium Italic.woff2") format('woff2'), url("../fonts/Raleway Medium Italic/Raleway Medium Italic.woff") format('woff'), url("../fonts/Raleway Medium Italic/Raleway Medium Italic.ttf") format('truetype'), url("../fonts/Raleway Medium Italic/Raleway Medium Italic.svg#Raleway Medium Italic") format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-FB06;
+}
+
+@font-face {
+    font-family: 'Raleway Italic';
+    src: url("Raleway Italic.eot");
+    src: url("../fonts/Raleway Italic/Raleway Italic.eot?#iefix") format('embedded-opentype'), url("../fonts/Raleway Italic/Raleway Italic.woff2") format('woff2'), url("../fonts/Raleway Italic/Raleway Italic.woff") format('woff'), url("../fonts/Raleway Italic/Raleway Italic.ttf") format('truetype'), url("../fonts/Raleway Italic/Raleway Italic.svg#Raleway Italic") format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+000D-FB06;
+}
+
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url("Raleway Bold.eot");
+    src: url("../fonts/Raleway Bold/Raleway Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/Raleway Bold/Raleway Bold.woff2") format('woff2'), url("../fonts/Raleway Bold/Raleway Bold.woff") format('woff'), url("../fonts/Raleway Bold/Raleway Bold.ttf") format('truetype'), url("../fonts/Raleway Bold/Raleway Bold.svg#Raleway Bold") format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-FB06;
+}
+
+@font-face {
+    font-family: 'Playfair Display Regular';
+    src: url("Playfair Display Regular.eot");
+    src: url("../fonts/Playfair Display Regular/Playfair Display Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/Playfair Display Regular/Playfair Display Regular.woff2") format('woff2'), url("../fonts/Playfair Display Regular/Playfair Display Regular.woff") format('woff'), url("../fonts/Playfair Display Regular/Playfair Display Regular.ttf") format('truetype'), url("../fonts/Playfair Display Regular/Playfair Display Regular.svg#Playfair Display Regular") format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+000D-FB02;
+}
+
+@font-face {
+    font-family: 'Playfair Display Bold';
+    src: url("Playfair Display Bold.eot");
+    src: url("../fonts/Playfair Display Bold/Playfair Display Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/Playfair Display Bold/Playfair Display Bold.woff2") format('woff2'), url("../fonts/Playfair Display Bold/Playfair Display Bold.woff") format('woff'), url("../fonts/Playfair Display Bold/Playfair Display Bold.ttf") format('truetype'), url("../fonts/Playfair Display Bold/Playfair Display Bold.svg#Playfair Display Bold") format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+000D-FB02;
+}
+
+@font-face {
+    font-family: 'Raleway Bold Italic';
+    src: url("Raleway Bold Italic.eot");
+    src: url("../fonts/Raleway Bold Italic/Raleway Bold Italic.eot?#iefix") format('embedded-opentype'), url("../fonts/Raleway Bold Italic/Raleway Bold Italic.woff2") format('woff2'), url("../fonts/Raleway Bold Italic/Raleway Bold Italic.woff") format('woff'), url("../fonts/Raleway Bold Italic/Raleway Bold Italic.ttf") format('truetype'), url("../fonts/Raleway Bold Italic/Raleway Bold Italic.svg#Raleway Bold Italic") format('svg');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+000D-FB02;
+}
+
+* {
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:focus {
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+    &:visited {
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+    &:hover {
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+button {
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
+    &:hover {
+        outline: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+    &:focus {
+        outline: none;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+ul {
+    margin-bottom: 0;
+    li {
+        list-style-type: none;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}
+
+input {
+    outline: none;
+    border-radius: 0;
+    border: none;
+}
+
+input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #7F796A;
+
+}
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #7F796A;
+}
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #7F796A;
+}
+input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #7F796A;
+}
+
+textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #7F796A;
+}
+textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #7F796A;
+}
+textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #7F796A;
+}
+textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #7F796A;
+}
+
+textarea {
+    outline: none;
+    border-radius: 0;
+    border: none;
+    resize: none;
+}
+
+select {
+    outline: none;
+    border-radius: 0;
+    border: none;
+}
+
+body {
+    // margin: 0 auto !important;
+    //max-width: 1920px;
+}
+.container {
+    max-width: 1120px;
+}
+
+[class*="lightcase-icon-"] {
+    &:before {
+        font-family: "FontAwesome" !important;
+    }
+}
+.lightcase-icon-prev {
+    &:before {
+        content: "\f053" !important;
+    }
+}
+.lightcase-icon-next:before {
+    content: "\f054" !important;
+}
+.lightcase-icon-close:before {
+    display: none !important;
+}
+
+.slider {
+    touch-action: auto!important;
+}
+
+.slick-slider {
+    -moz-user-select: text;
+    cursor: auto !important;
+    -webkit-user-select: auto !important;
+    -moz-user-select: auto !important;
+}

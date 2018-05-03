@@ -1,0 +1,99 @@
+footer {
+    background-color: $c-black;
+    padding: 75px 0;
+    @media(max-width:1024px) {
+        padding: 35px 0;
+    }
+    @media(max-width:768px) {
+        padding: 25px 0;
+    }
+    .container {
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            @media(max-width:768px) {
+                flex-direction: column;
+            }
+            .col-md-3,
+            .col-md-4,
+            .col-md-5 {
+                @media(max-width:1024px) {
+                    max-width: 33.33%;
+                }
+                @media(max-width:768px) {
+                    max-width: 100%;
+                }
+            }
+            p {
+                color: white;
+                font-family: $f-rm;
+                font-size: 12px;
+                line-height: 14.4px;
+                margin-bottom: 22px;
+                @media(max-width:768px) {
+                    margin-bottom: 8px;
+                }
+                a {
+                    display: inline-block;
+                    color: white;
+                    &:hover {
+                        font-family: $f-rb;
+                        i {
+                            font-size: 18px;
+                            transition: all 0.2s;
+                        }
+                    }
+                    .iconfont {
+                        margin-right: 10px;
+                        transition: all 0.2s;
+                    }
+                }
+            }
+            .f-center,
+            .f-left {
+                p {
+                    display: flex;
+                    @media(max-width:768px) {
+                        justify-content: center;
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                        @media(max-width:768px) {
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+            }
+            .f-center {
+                p {
+                    &:first-child {
+                        a {
+                            font-family: $f-rmi;
+                            &:hover {
+                                font-family: $f-rbi;
+                            }
+                        }
+                    }
+                }
+            }
+            .f-right {
+                text-align: right;
+                @media(max-width:768px) {
+                    text-align: center;
+                }
+                p {
+                    a {
+                        &:hover {
+                            font-family: $f-rb;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
