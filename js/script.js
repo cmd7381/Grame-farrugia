@@ -1,8 +1,9 @@
-/*------------ 动画效果初始化  Start ------------*/
+/*------------ animate.reset  Start ------------*/
 new WOW().init();
-/*------------ 动画效果初始化  End ------------*/
+/*------------ animate.reset  End ------------*/
+
 jQuery(document).ready(function($) {
-	/*------------ 判断隐藏头部距离头部的位置  Start ------------*/
+	/*------------ Determine the position of the head from the head.  Start ------------*/
 	$(document).scroll(function() {
 		var windowScrollTop = $(window).scrollTop();
 		if($(window).width() > 1400) {
@@ -35,43 +36,44 @@ jQuery(document).ready(function($) {
 			}
 		}
 	});
-	/*------------ 判断隐藏头部距离头部的位置  End ------------*/
+	/*------------ Determine the position of the head from the head.  End ------------*/
 
-	/*------------ readmore-button控制文字隐藏/显示  Start ------------*/
+	/*------------ readmore-button Control text hide/display.  Start ------------*/
 	$('.read-button a').on('click', function() {
 		if($(this).text() == 'Read more..') {
-			$('.readmore-hidetext').slideDown(500);
+			$(this).parent().siblings('.readmore-hidetext').slideDown(500);
 			$(this).text('Read less..');
 		} else {
-			$('.readmore-hidetext').slideUp(500);
+			$(this).parent().siblings('.readmore-hidetext').slideUp(500);
 			$(this).text('Read more..');
 		}
 	});
-	/*------------ readmore-button控制文字隐藏/显示  End ------------*/
+	/*------------ readmore-button Control text hide/display.  End ------------*/
 
-	/*------------ portfolio标题的active控制  Start ------------*/
+	/*------------ portfolio active   Start ------------*/
 	$('#filters button').on('click', function() {
-			$(this).siblings('button').removeClass('portfolio-active')
-			$(this).addClass('portfolio-active');
-		})
-		/*------------ portfolio标题的active控制  End ------------*/
+		$(this).siblings('button').removeClass('portfolio-active')
+		$(this).addClass('portfolio-active');
+	});
+	/*------------ portfolio active   End ------------*/
 
-	/*------------ 汉堡包的开关控制  Start ------------*/
+	/*------------ hamburger  Start ------------*/
 	$('.hamb').on('click', function() {
-		if ($(window).width() < 769) {
-            if (!$('body').hasClass('hidden')) {
-                $('body').addClass('hidden');
-                $(this).siblings('.menu-outer').fadeIn(700);
-            } else {
-                $('body').removeClass('hidden');
-                $(this).siblings('.menu-outer').fadeOut(700);
-            }
-        }
+		if($(window).width() < 769) {
+			if(!$('body').hasClass('hidden')) {
+				$('body').addClass('hidden');
+				$(this).siblings('.menu-outer').slideDown(600);
+			} else {
+				$('body').removeClass('hidden');
+				$(this).siblings('.menu-outer').slideUp(600);
+			}
+		}
 	});
 
 	$('.menu-outer ul li a').on('click', function() {
 		if($('body').has('.hidden')) {
 			$('body').removeClass('hidden');
+			$('.menu-outer').css('display', 'none');
 		}
 	});
 
@@ -84,15 +86,15 @@ jQuery(document).ready(function($) {
 			$('body').removeClass('hide-hidden');
 		}
 	});
-	/*------------ 汉堡包的开关控制  End ------------*/
+	/*------------ hamburger  End ------------*/
 
-	/*------------ 点击logo回到顶部  Start ------------*/
+	/*------------ click logo to top  Start ------------*/
 	$('.hide-brand').on('click', function() {
 		$("body,html").animate({
 			scrollTop: $("#header").offset().top
 		}, 1000);
 	});
-	/*------------ 点击logo回到顶部  Start ------------*/
+	/*------------ click logo to top  Start ------------*/
 
 	/*------------ slick Start ------------*/
 	if($('.slide-container').length > 0) {
@@ -102,6 +104,17 @@ jQuery(document).ready(function($) {
 			infinite: true,
 			speed: 300,
 			slidesToShow: 1,
+		});
+	}
+
+	if($('.viewport-sc').length > 0) {
+		$('.viewport-sc').slick({
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear',
+			autoplay: true,
+			autoplaySpeed: 5000,
 		});
 	}
 	/*------------ slick End ------------*/
@@ -147,7 +160,7 @@ jQuery(document).ready(function($) {
 	//}
 	/*------------ lightcase End ------------*/
 
-	/*------------ 点击滚动效果 Start ------------*/
+	/*------------ Start ------------*/
 	$('.about-button').on('click', function() {
 		$("body,html").animate({
 			scrollTop: $("#aboutus").offset().top
@@ -168,5 +181,28 @@ jQuery(document).ready(function($) {
 			scrollTop: $("#contact").offset().top
 		}, 1000);
 	});
-	/*------------ 点击滚动效果 End ------------*/
+	/*------------ End ------------*/
+
+	/*------------  Start ------------*/
+	/*var anchor = window.location.hash;
+	if(anchor != "" && anchor != undefined) {
+		var anchorText = anchor.replace("#", "");
+		$('html,body').stop(true).animate({
+			scrollTop: $('.content').offset().top
+		}, 1000);
+	}*/
+	/*------------  End ------------*/
+
+	/*------------ imageslazyload Start ------------*/
+	//	$('img').lazyload({
+	//		effect: 'fadeIn'
+	//	});
+	/*------------ imageslazyload End ------------*/
+
+	/*------------ send click Start ------------*/
+	$(".icon-img").click(function() {
+		$(".submit").trigger("click")
+	});
+	/*------------ send click End ------------*/
+
 })

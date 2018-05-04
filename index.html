@@ -15,6 +15,7 @@
 		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/isotope.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
 
 		<title>Graeme Farrugia</title>
@@ -89,8 +90,12 @@
 		<div class="viewport">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 wow fadeInUp">
-						<img src="img/home1.jpg" />
+					<div class="col-md-12">
+						<div class="viewport-sc">
+							<div class="viewport-ss"><img src="img/home1.jpg" /></div>
+							<div class="viewport-ss"><img src="img/home1.jpg" /></div>
+							<div class="viewport-ss"><img src="img/home1.jpg" /></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -311,31 +316,31 @@
 					</div>
 					<div class="isotope">
 						<div class="element-item Kitchen Bathrooms Storage-solutions ">
-							<div><img src="img/3-GF-Portfolio-01.jpg" /></div>
+							<div><img data-original="img/3-GF-Portfolio-01.jpg" /></div>
 						</div>
 						<div class="element-item Kitchen Commercial Laundry ">
-							<div><img src="img/3-GF-Portfolio-02.jpg" /></div>
+							<div><img data-original="img/3-GF-Portfolio-02.jpg" /></div>
 						</div>
 						<div class="element-item Kitchen Commercial Laundry ">
-							<div><img src="img/3-GF-Portfolio-03.jpg" /></div>
+							<div><img data-original="img/3-GF-Portfolio-03.jpg" /></div>
 						</div>
 						<div class="element-item Kitchen Commercial Laundry ">
-							<div><img src="img/3-GF-Portfolio-04.jpg" /></div>
+							<div><img data-original="img/3-GF-Portfolio-04.jpg" /></div>
 						</div>
 						<div class="element-item Kitchen Commercial Storage-solutions ">
-							<div><img src="img/3-GF-Portfolio-05.jpg" /></div>
+							<div><img data-original="img/3-GF-Portfolio-05.jpg" /></div>
 						</div>
 						<div class="element-item Kitchen Bathrooms ">
-							<div><img src="img/3-GF-Portfolio-06.jpg" /></div>
+							<div><img data-original="img/3-GF-Portfolio-06.jpg" /></div>
 						</div>
 						<div class="element-item Kitchen Commercial ">
-							<div><img src="img/3-GF-Portfolio-07.jpg" /></div>
+							<div><img data-original="img/3-GF-Portfolio-07.jpg" /></div>
 						</div>
 						<div class="element-item Kitchen Bathrooms ">
-							<div><img src="img/3-GF-Portfolio-08.jpg" /></div>
+							<div><img data-original="img/3-GF-Portfolio-08.jpg" /></div>
 						</div>
 						<div class="element-item Bathrooms ">
-							<div><img src="img/3-GF-Portfolio-08.jpg" /></div>
+							<div><img data-original="img/3-GF-Portfolio-08.jpg" /></div>
 						</div>
 					</div>
 				</div>
@@ -358,12 +363,8 @@
 						<textarea name="" rows="" cols="" placeholder="Message"></textarea>
 						<div class="type-outer">
 							<div class="icon-outer">
-								<div class="icon-img">
-									<img src="img/send.svg" />
-								</div>
-								<div class="h3-outer">
-									<h3>Send</h3>
-								</div>
+								<div class="icon-img"></div>
+								<input type="submit" value="Send" class="submit" />
 							</div>
 						</div>
 					</form>
@@ -376,11 +377,9 @@
 					<div class="col-md-5">
 						<div class="f-left">
 							<p>
-
 								<a href="tel:+61 412 839 844"><i class="iconfont icon-weibiaoti-" title="tel"></i>+61 412 839 844</a>
 							</p>
 							<p>
-
 								<a href="mailto:info@gfcabinetworks.com.au" target="_blank"><i class="iconfont icon-weibiaoti-3" title="email"></i>info@gfcabinetworks.com.au</a>
 							</p>
 						</div>
@@ -388,11 +387,9 @@
 					<div class="col-md-3">
 						<div class="f-center">
 							<p>
-
 								<a href="#"><i class="iconfont icon-weibiaoti-2" title="instagram"></i>@tobeconfirmed</a>
 							</p>
 							<p>
-
 								<a href="https://www.facebook.com/GraemeFarrugiaCabinetWorks?hc_location=timeline" target="_blank"><i class="iconfont icon-weibiaoti-1" title="facebook"></i>@GraemeFarrugiaCabinetWorks</a>
 							</p>
 						</div>

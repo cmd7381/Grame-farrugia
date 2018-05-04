@@ -54,12 +54,12 @@ header {
         height: 100%;
     }
     @media(max-width:768px) {
-        z-index: 1;
+        z-index: 2;
         position: fixed;
         top: 0;
         display: none;
         left: 0;
-        //transition: all 0.7s ease-in-out; //bling
+        //transition: all 0.6s ease-in-out; //bling
         width: 100%;
         height: 100vh;
         background-color: #fff;
@@ -167,8 +167,8 @@ header {
 }
 
 .hamb {
-    z-index: 2;
-    transition: all 0.3s;
+    z-index: 3;
+    transition: all 0.4s;
     position: absolute;
     right: 15px;
     top: 50px;
@@ -192,7 +192,7 @@ header {
         display: block;
         background-color: $c-black;
         position: relative;
-        transition: all 0.7s ease-in-out;
+        transition: all 0.4s ease-in-out;
         &:first-child {
             top: 3px;
         }
@@ -214,7 +214,7 @@ header {
     .hamb {
         span {
             @media(max-width:768px) {
-                transition: all 0.7s ease-in-out;
+                transition: all 0.4s ease-in-out;
             }
             &:first-child {
                 @media(max-width:768px) {
@@ -235,13 +235,13 @@ header {
             }
         }
     }
-    .menu-outer {
-        @media(max-width:768px) {
-           // top: 0;
-            //display: block;
-            //transition: all 0.7s ease-in-out;
-        }
-    }
+//  .menu-outer {
+//      @media(max-width:768px) {
+//            top: 0;
+//            display: block;
+//            transition: all 0.6s ease-in-out;
+//      }
+//  }
 }
 
 .hide-header {
@@ -251,7 +251,7 @@ header {
     top: 0;
     z-index: 2;
     width: 100%;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.4s ease-in-out;
     .container {
         display: flex;
         justify-content: space-between;
@@ -274,11 +274,11 @@ header {
                 align-items: center;
             }
             @media(max-width:768px) {
-                z-index: 1;
+                z-index: 2;
                 position: fixed;
                 top: -100vh;
                 left: 0;
-                transition: all 0.7s ease-in-out;
+                transition: all 0.6s ease-in-out;
                 width: 100%;
                 height: 100%;
                 background-color: #fff;
@@ -339,7 +339,7 @@ header {
             @media(min-width:769px) {
                 display: none;
             }
-            z-index: 2;
+            z-index: 3;
             transition: all 0.3s;
             position: absolute;
             right: 15px;
@@ -364,7 +364,7 @@ header {
                 display: block;
                 background-color: $c-black;
                 position: relative;
-                transition: all 0.7s ease-in-out;
+                transition: all 0.6s ease-in-out;
                 &:first-child {
                     top: 3px;
                 }
@@ -387,12 +387,12 @@ header {
     }
     .hide-header {
         @media(max-width:768px) {
-            transition: all 0.7s ease-in-out;
+            transition: all 0.6s ease-in-out;
         }
         .hide-hamb {
             span {
                 @media(max-width:768px) {
-                    transition: all 0.7s ease-in-out;
+                    transition: all 0.6s ease-in-out;
                 }
                 &:first-child {
                     @media(max-width:768px) {
@@ -416,7 +416,7 @@ header {
         .hide-menu-outer {
             @media(max-width:768px) {
                 top: 0;
-                transition: all 0.7s ease-in-out;
+                transition: all 0.6s ease-in-out;
             }
         }
     }
@@ -427,5 +427,5 @@ header {
 }
 .inhidden {
     transform: translate3d(0, -100%, 0);
-    transition: all 0.7s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }

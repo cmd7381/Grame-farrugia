@@ -95,18 +95,22 @@ img {
 }
 
 a {
+    outline: none;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     &:focus {
+        outline: none;
         text-decoration: none;
         transition: all 0.2s ease-in-out;
     }
     &:visited {
+        outline: none;
         text-decoration: none;
         transition: all 0.2s ease-in-out;
     }
     &:hover {
+        outline: none;
         text-decoration: none;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
